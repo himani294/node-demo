@@ -248,7 +248,7 @@ exports.FetchData = (req, res) => {
     
 }
 
-
+//add add_user_data array
 exports.addData = (req, res) => {
     //user_id = req.params.id;
 
@@ -263,7 +263,7 @@ exports.addData = (req, res) => {
     res.send(users);
 }
 
-//delete data
+//delete data of id(from post)
 exports.deleteData = (req, res) => {
     
      user_id = req.body.id;
@@ -277,7 +277,7 @@ exports.deleteData = (req, res) => {
      
  }
 
-
+//edit name of id(from post)
  exports.editData = (req, res) => {
    
   user_id = req.body.id;
