@@ -269,7 +269,7 @@ exports.deleteData = (req, res) => {
      user_id = req.body.id;
  
     //var index = users.indexOf({"id" : user_id});
-    var index = users.findIndex(function(item, i){
+    var index = users.findIndex(function(item){
         return item.id == user_id
       });
     users.splice(index,1);
@@ -283,7 +283,7 @@ exports.deleteData = (req, res) => {
   user_id = req.body.id;
   
      //var index = users.indexOf({"id" : user_id});
-     var index = users.findIndex(function(item, i){
+     var index = users.findIndex(function(item){
          return item.id == user_id
        });
        users[index].name = "Himani";
