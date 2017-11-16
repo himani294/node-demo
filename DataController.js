@@ -276,3 +276,16 @@ exports.deleteData = (req, res) => {
     res.send(users);
      
  }
+
+
+ exports.editData = (req, res) => {
+   
+  user_id = req.body.id;
+  
+     //var index = users.indexOf({"id" : user_id});
+     var index = users.findIndex(function(item, i){
+         return item.id == user_id
+       });
+       users[index].name = "Himani";
+  res.send(users);
+ }
